@@ -1,2 +1,13 @@
 # google-keep-clone
-Clone of Google Keep Application
+Google Keep Clone
+
+<!---
+Features to Add:
+
+- [ ] Add Note
+- [ ] Delete Note
+- [ ] Update Note
+- [ ] Pin Note
+- [ ] Archive Note
+- [ ] Integrate with database
+-->
