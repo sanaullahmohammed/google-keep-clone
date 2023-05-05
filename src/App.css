@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #ffffff;
+  max-width: 100%;
 }
 
+/* Header with Logo */
 .header {
   background-color: #ffffff;
   margin: auto -10px;
@@ -23,6 +27,7 @@
   font-weight: 500;
 }
 
+/* Add Note form */
 form {
   position: relative;
   width: 600px;
@@ -37,18 +42,23 @@ form input {
   width: 100%;
   border: none;
   padding: 4px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   outline: none;
   font-size: 1rem;
   resize: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 form textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 550;
   width: 100%;
   border: none;
   padding: 4px 10px;
   outline: none;
   font-size: 1rem;
   resize: none;
+  margin-top: 3px;
 }
 
 form button {
@@ -69,26 +79,73 @@ form button {
   outline: none;
 }
 
+/* Note  */
+
 .note {
   background: #ffffff;
-  width: 240px;
+  min-width: 240px;
   border-radius: 7px;
   box-shadow: 0 2px 5px rgb(175, 175, 175);
   padding: 10px;
   margin: 16px;
   float: left;
   margin-right: 0;
+  min-height: 100px;
 }
+
+/* Note Title */
 
 .note h3 {
   font-size: 1rem;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  font-family: "Roboto", sans-serif;
 }
 
+/* Note Content */
 .note p {
   font-size: 1rem;
   color: #6f212b;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Note Buttons */
+
+.note-buttons button {
+  position: relative;
+  float: right;
+  color: #f88651;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.note-edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-edit-form input {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  outline: none;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.note-edit-form textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
 }
