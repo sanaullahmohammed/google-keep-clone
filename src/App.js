@@ -1,13 +1,16 @@
 import "./App.css";
 import Header from "./components/Header";
 import AddNote from "./components/AddNote";
+import { NotesContextProvider } from "./contexts/NoteContext";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <AddNote />
-    </div>
+    <NotesContextProvider>
+      <div className="App">
+        <Header />
+        <AddNote />
+      </div>
+    </NotesContextProvider>
   );
 }
 

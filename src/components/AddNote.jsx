@@ -1,10 +1,12 @@
 import AddIcon from "@mui/icons-material/Add";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { NotesContext } from "../contexts/NoteContext";
 
 const AddNote = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [isExpanded, setExpanded] = useState(false);
+  const { addNote } = useContext(NotesContext);
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
@@ -20,11 +22,18 @@ const AddNote = () => {
 
   const handleAdd = (event) => {
     event.preventDefault();
-    // add code
+    if (title.trim() !== "" && content.trim() !== "") {
+      addNote({
+        title: title,
+        content: content,
+      });
+      setTitle("");
+      setContent("");
+    }
   };
 
   return (
-    <form className="add-note-form">
+    <form className="add-note-form" onSubmit={handleAdd}>
       {isExpanded && (
         <input
           type="text"
