@@ -68,3 +68,27 @@ form button {
   cursor: pointer;
   outline: none;
 }
+
+.note {
+  background: #ffffff;
+  width: 240px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 10px;
+  margin: 16px;
+  float: left;
+  margin-right: 0;
+}
+
+.note h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1rem;
+  color: #6f212b;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

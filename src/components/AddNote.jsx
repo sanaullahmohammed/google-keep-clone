@@ -29,6 +29,7 @@ const AddNote = () => {
       });
       setTitle("");
       setContent("");
+      setExpanded(false);
     }
   };
 
