@@ -12,7 +12,7 @@
 /* Header with Logo */
 .header {
   background-color: #ffffff;
-  margin: auto -10px;
+  margin: auto 0px;
   padding: 10px 20px;
   box-shadow: 0 0 2px 0 rgb(110, 110, 110);
   flex-direction: row;
