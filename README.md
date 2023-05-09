@@ -1,6 +1,11 @@
 # google-keep-clone
 Google Keep Clone
 
+Functions available:
+- Add Note
+- Edit Note
+- Delete Note
+
 <!---
 Features to Add:
 
