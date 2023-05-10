@@ -1,6 +1,9 @@
 # google-keep-clone
 Google Keep Clone
 
+Tech Stack: 
+- React.js
+
 Functions available:
 - Add Note
 - Edit Note
